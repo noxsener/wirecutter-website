@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="index,follow">
+    <title>Blog Home - Start Bootstrap Template</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <meta property="og:title" content="${website.baslik}">
+    <meta property="og:image" content="${ikonParametreList[0].resim}">
+    <meta property="og:url" content="${website.url}">
+    <meta property="og:site_name" content="${website.baslik}">
+    <meta property="og:description" content="${website.uzunBaslik}">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="${website.twitterPage}">
+    <meta name="twitter:title" content="${website.baslik}">
+    <meta name="twitter:description" content="${website.uzunBaslik}">
+    <meta name="twitter:image" content="${ikonParametreList[0].resim}">
+    <script id="microHtmlElement" type="application/ld+json"></script>
+    <script async="" src="${'https://www.googletagmanager.com/gtag/js?id=' + website.googleAnalytics}"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+
+    <!--
+    <script>
+        /*<![CDATA[*/
+        var googleAnalytics = /*[[${website.googleAnalytics}]]*/'';
+        if(googleAnalytics) {window.dataLayer = window.dataLayer || [];function gtag() {dataLayer.push(arguments);}gtag('js', new Date());gtag('config', googleAnalytics);}
+        /*]]>*/
+    </script>
+    -->
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#!">
+            <img th:alt="${website.siteAdi}" th:title="${website.siteAdi}" th:src="${ikonParametreList[0].resim}" src="http://app.codenfast.com:9001/api/rest/server-files/system/image/codenfast.com/012021/Icon-144.webp" alt="logo" width="64" height="64" aria-label="logo">
+            <span id="navbar-text" th:text="${website.siteAdi}">Codenfast</span>
+        </a> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Blog</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<header class="py-5 mb-4">
+    <div class="container banner banner-fluorescent">
+        <div class="row justify-content-center align-items-center text-center my-5">
+            <div class="col-12 col-md-4">
+                <svg id="coding-desktop" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="study">
+                        <rect width="64" height="64"></rect>
+                        <g id="smoke">
+                            <path id="smoke-2" d="M9 21L9.55279 19.8944C9.83431 19.3314 9.83431 18.6686 9.55279 18.1056L9 17L8.44721 15.8944C8.16569 15.3314 8.16569 14.6686 8.44721 14.1056L9 13" stroke="#797270"></path>
+                            <path id="smoke-1" d="M6.5 22L7.05279 20.8944C7.33431 20.3314 7.33431 19.6686 7.05279 19.1056L6.5 18L5.94721 16.8944C5.66569 16.3314 5.66569 15.6686 5.94721 15.1056L6.5 14" stroke="#797270"></path>
+                        </g>
+                        <g id="laptop">
+                            <rect id="laptop-base" x="17" y="28" width="20" height="3" fill="#F3F3F3" stroke="#453F3C" stroke-width="2"></rect>
+                            <rect id="laptop-screen" x="18" y="17" width="18" height="11" fill="#5A524E" stroke="#453F3C" stroke-width="2"></rect>
+                            <rect id="line-1" x="20" y="19" width="14" height="1" fill="#F78764"></rect>
+                            <rect id="line-2" x="20" y="21" width="14" height="1" fill="#F9AB82"></rect>
+                            <rect id="line-3" x="20" y="23" width="14" height="1" fill="#F78764"></rect>
+                            <rect id="line-4" x="20" y="25" width="14" height="1" fill="#F9AB82"></rect>
+                        </g>
+                        <g id="cup">
+                            <rect id="Rectangle 978" x="5" y="24" width="5" height="7" fill="#CCC4C4" stroke="#453F3C" stroke-width="2"></rect>
+                            <path id="Ellipse 416" d="M11 28C12.1046 28 13 27.1046 13 26C13 24.8954 12.1046 24 11 24" stroke="#453F3C" stroke-width="2"></path>
+                            <rect id="Rectangle 996" x="6" y="25" width="3" height="1" fill="#D6D2D1"></rect>
+                        </g>
+                        <g id="books">
+                            <rect id="Rectangle 984" x="58" y="27" width="4" height="14" transform="rotate(90 58 27)" fill="#B16B4F" stroke="#453F3C" stroke-width="2"></rect>
+                            <rect id="Rectangle 985" x="56" y="23" width="4" height="14" transform="rotate(90 56 23)" fill="#797270" stroke="#453F3C" stroke-width="2"></rect>
+                            <rect id="Rectangle 986" x="60" y="19" width="4" height="14" transform="rotate(90 60 19)" fill="#F78764" stroke="#453F3C" stroke-width="2"></rect>
+                            <rect id="Rectangle 993" x="47" y="20" width="12" height="1" fill="#F9AB82"></rect>
+                            <rect id="Rectangle 994" x="43" y="24" width="12" height="1" fill="#54504E"></rect>
+                            <rect id="Rectangle 995" x="45" y="28" width="12" height="1" fill="#804D39"></rect>
+                        </g>
+                        <g id="desk">
+                            <rect id="Rectangle 973" x="4" y="31" width="56" height="5" fill="#797270" stroke="#453F3C" stroke-width="2"></rect>
+                            <rect id="Rectangle 987" x="10" y="36" width="30" height="6" fill="#797270" stroke="#453F3C" stroke-width="2"></rect>
+                            <rect id="Rectangle 975" x="6" y="36" width="4" height="24" fill="#797270" stroke="#453F3C" stroke-width="2"></rect>
+                            <rect id="Rectangle 974" x="40" y="36" width="18" height="24" fill="#797270" stroke="#453F3C" stroke-width="2"></rect>
+                            <line id="Line 129" x1="40" y1="48" x2="58" y2="48" stroke="#453F3C" stroke-width="2"></line>
+                            <line id="Line 130" x1="22" y1="39" x2="28" y2="39" stroke="#453F3C" stroke-width="2"></line>
+                            <line id="Line 142" x1="46" y1="42" x2="52" y2="42" stroke="#453F3C" stroke-width="2"></line>
+                            <line id="Line 131" x1="46" y1="54" x2="52" y2="54" stroke="#453F3C" stroke-width="2"></line>
+                            <rect id="Rectangle 988" x="11" y="37" width="28" height="1" fill="#54504E"></rect>
+                            <rect id="Rectangle 992" x="5" y="32" width="54" height="1" fill="#9E9492"></rect>
+                            <rect id="Rectangle 989" x="7" y="37" width="2" height="1" fill="#54504E"></rect>
+                            <rect id="Rectangle 990" x="41" y="37" width="16" height="1" fill="#54504E"></rect>
+                            <rect id="Rectangle 991" x="41" y="49" width="16" height="1" fill="#54504E"></rect>
+                            <line id="Line 143" y1="60" x2="64" y2="60" stroke="#453F3C" stroke-width="2"></line>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <div class="col-12 col-md-8">
+                <h1 class="fw-bolder white-text-shadow">Codenfast</h1>
+                <p class="lead mb-0">Tired Professional Developers' Rested Place</p>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="card mb-4 imJustLooking-left card-content" th:each="blogSayfa : ${son8BlogSayfaList}">
+                <a href="#!" class="solid-glass-half"><img class="card-img-top" src="https://dummyimage.com/850x350/dee2e6/6c757d.jpg" alt="850x350" width="850" height="350"></a>
+                <div class="card-body">
+                    <div class="small text-muted">January 1, 2022</div>
+                    <h2 class="card-title">Featured Post Title</h2>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+                    <a class="btn btn-primary crazy-glitch" href="#!">Read more →</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card mb-4 imJustLooking-left card-content">
+                        <a href="#!" class="solid-glass-half"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="700x350" width="700" height="350"></a>
+                        <div class="card-body">
+                            <div class="small text-muted">January 1, 2022</div>
+                            <h2 class="card-title h4">Post Title</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
+                            <a class="btn btn-primary crazy-glitch" href="#!">Read more →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card mb-4 imJustLooking-left card-content">
+                        <a href="#!" class="solid-glass-half"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="700x350" width="700" height="350"></a>
+                        <div class="card-body">
+                            <div class="small text-muted">January 1, 2022</div>
+                            <h2 class="card-title h4">Post Title</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
+                            <a class="btn btn-primary" href="#!">Read more →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card mb-4 imJustLooking-left card-content">
+                        <a href="#!" class="solid-glass-half"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="700x350" width="700" height="350"></a>
+                        <div class="card-body">
+                            <div class="small text-muted">January 1, 2022</div>
+                            <h2 class="card-title h4">Post Title</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
+                            <a class="btn btn-primary" href="#!">Read more →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card mb-4 imJustLooking-left card-content">
+                        <a href="#!" class="solid-glass-half"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="700x350" width="700" height="350"></a>
+                        <div class="card-body">
+                            <div class="small text-muted">January 1, 2022</div>
+                            <h2 class="card-title h4 crazy-glitch">Post Title</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam.</p>
+                            <a class="btn btn-primary" href="#!">Read more →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav aria-label="Pagination">
+                <hr class="my-0">
+                <ul class="pagination justify-content-center align-items-center my-4">
+                   <!--
+                    <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">Newer</a> </li>
+                    <li class="page-item active" aria-current="page"><a class="page-link" href="#!">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#!">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#!">3</a></li>
+                    <li class="page-item disabled"><a class="page-link" href="#!">...</a></li>
+                    <li class="page-item"><a class="page-link" href="#!">15</a></li>
+                    <li class="page-item"><a class="page-link" href="#!">Older</a></li>
+                    -->
+                </ul>
+            </nav>
+        </div>
+        <div class="col-lg-4">
+            <div class="card mb-4 imJustLooking-left">
+                <div class="card-header">Search</div>
+                <div class="card-body">
+                    <div class="input-group">
+                        <input class="form-control" type="text" placeholder="What are you looking for..?"
+                        id="search-input" aria-label="What are you looking for..?" aria-describedby="button-search">
+                        <input type="hidden" name="oq" value="site">
+                        <button class="btn btn-primary" id="button-search" type="button" onclick="search()">OK</button>
+                    </div>
+                </div>
+            </div>
+            <!--
+            <div class="card mb-4 imJustLooking-left">
+                <div class="card-header">Point of Interest</div>
+                <div class="card-body text-white">We are showing some stuff maybe you will be interest</div>
+            </div> -->
+            <div class="card mb-4 imJustLooking-left">
+                <div class="card-header">Categories</div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <ul class="list-unstyled mb-0">
+                                <li th:if="${website.webSiteKategoriList !=null && !website.webSiteKategoriList.isEmpty()}" th:each="kategori : ${website.webSiteKategoriList}" ><a href="http://codenfast.com" th:href="${'/category/'+kategori.url+'.html'}" th:text="${kategori.ad}" th:title="${kategori.ad}">Category Link</a></li>
+                            </ul>
+                        </div>
+                        <!-- <div class="col-sm-6">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#!">JavaScript</a></li>
+                                <li><a href="#!">CSS</a></li>
+                                <li><a href="#!">Tutorials</a></li>
+                            </ul>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-4 imJustLooking-left card-content" th:if="${sabitSayfaList !=null && !sabitSayfaList.isEmpty()}" th:each="sayfa : ${sabitSayfaList}">
+                <!-- <a th:href="${'/static/'+sayfa.url+'.html'}" href="#!" class="solid-glass-half">
+                     <img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="700x350" width="700" height="350"> 
+                </a> -->
+                <div class="card-body">
+                    <h2 class="card-title h4" th:text="${sayfa.baslik}">Static Page Title</h2>
+                    <!-- <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p> -->
+                    <a class="btn btn-primary crazy-glitch" href="#!" th:href="${'/static/'+sayfa.url+'.html'}" th:title="${sayfa.baslik}">Read</a>
+                </div>
+            </div>
+            <div class="card mb-4 imJustLooking-left card-content" th:if="${bizKimizParametreList !=null && !bizKimizParametreList.isEmpty()}">
+                <!-- <a th:href="${'/static/'+sayfa.url+'.html'}" href="#!" class="solid-glass-half">
+                     <img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="700x350" width="700" height="350"> 
+                </a> -->
+                <div class="card-body" th:each="bizKimizParametre : ${bizKimizParametreList}">
+                    <h2 class="card-title h4" th:if="${bizKimizParametre.baslik !=null && bizKimizParametre.baslik !=''}" th:text="${bizKimizParametre.baslik}">Who we are?</h2>
+                    <p class="card-text" th:text="${bizKimizParametre.parametreDeger !=null && bizKimizParametre.parametreDeger !=''}">We are ...</p>
+                </div>
+            </div>
+
+            <div class="card mb-4 imJustLooking-left card-content" th:if="${biziOneCikaranOzelliklerParametreList !=null && !biziOneCikaranOzelliklerParametreList.isEmpty()}">
+                <!-- <a th:href="${'/static/'+sayfa.url+'.html'}" href="#!" class="solid-glass-half">
+                     <img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="700x350" width="700" height="350"> 
+                </a> -->
+                <div class="card-body" th:each="biziOneCikaranOzellik : ${biziOneCikaranOzelliklerParametreList}">
+                    <h2 class="card-title h4" th:if="${biziOneCikaranOzellik.baslik !=null && biziOneCikaranOzellik.baslik !=''}" th:text="${biziOneCikaranOzellik.baslik}">Our Expertize?</h2>
+                    <p class="card-text" th:text="${biziOneCikaranOzellik.parametreDeger !=null && biziOneCikaranOzellik.parametreDeger !=''}">We can ...</p>
+                </div>
+            </div>
+
+            <div class="card mb-4 imJustLooking-left card-content" th:if="${referansParametreList!=null && !referansParametreList.isEmpty()}">
+                <!-- <a th:href="${'/static/'+sayfa.url+'.html'}" href="#!" class="solid-glass-half">
+                     <img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="700x350" width="700" height="350"> 
+                </a> -->
+                <div class="card-body" th:each="referans : ${referansParametreList}">
+                    <h2 class="card-title h4" th:if="${referans.baslik !=null && referans.baslik !=''}" th:text="${referans.baslik}">We Got References</h2>
+                    <p class="card-text" th:text="${referans.parametreDeger !=null && referans.parametreDeger !=''}">That organization was worked with us</p>
+                </div>
+            </div>
+
+
+            <div class="card mb-4 imJustLooking-left card-content" th:if="${kisiTanitimlariParametreList!=null && !kisiTanitimlariParametreList.isEmpty()}">
+                <!-- <a th:href="${'/static/'+sayfa.url+'.html'}" href="#!" class="solid-glass-half">
+                     <img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="700x350" width="700" height="350"> 
+                </a> -->
+                <div class="card-body" th:each="kisiTanitim : ${kisiTanitimlariParametreList}">
+                    <h2 class="card-title h4" th:if="${kisiTanitim.baslik !=null && kisiTanitim.baslik !=''}" th:text="${kisiTanitim.baslik}">Mr.John Doe</h2>
+                    <p class="card-text" th:text="${kisiTanitim.parametreDeger !=null && kisiTanitim.parametreDeger !=''}">Leading to no one</p>
+                </div>
+            </div>
+            
+            <!-- <div class="card mb-4 imJustLooking-left" th:if="${sabitSayfaList !=null && !sabitSayfaList.isEmpty()}" th:each="sayfa : ${sabitSayfaList}">
+                <div class="card-header">Other Pages</div>
+                <div class="card-body text-white">
+                    <a th:href="${'/static/'+sayfa.url+'.html'}" th:title="${sayfa.baslik}">Static page link</a>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</div>
+<footer class="bg-dark">
+    <div class="container">
+        <div class="row justify-content-center align-items-start">
+            <div class="col-sm-4">
+                <h4 class="text-white">Follow</h4>
+                <a target="_blank"></a>
+                <a th:if="${website.youtubeKanalKimligi !=null && website.youtubeKanalKimligi !=''}"
+                th:href="${'https://www.youtube.com/channel/'+website.youtubeKanalKimligi}" rel="noreferrer" title="Youtube" target="_blank">
+                    <img src="http://app.codenfast.com:9001/api/rest/server-files/system/image/codenfast.com/012021/youtube-64x64.webp" alt="Youtube" title="Youtube"></a>
+                <a th:if="${website.twitterPage !=null && website.twitterPage !=''}" th:href="${'https://twitter.com/'+website.twitterPage}" title="Twitter" rel="noreferrer" target="_blank"> <img loading="lazy" src="http://app.codenfast.com:9001/api/rest/server-files/system/image/codenfast.com/012021/share-twitter-64x64.webp" alt="Twitter" title="Twitter"></a>
+            </div>
+            <div class="col-sm-4">
+                <h4 class="text-white">Share To Social Media</h4>
+                <a title="Share" href="https://www.twitter.com/share?url=codenfast.com&amp;text=Codenfast+Software+Developer+Group">
+                    <img loading="lazy" src="http://app.codenfast.com:9001/api/rest/server-files/system/image/codenfast.com/012021/share-twitter-64x64.webp" class="cfm-share" alt="Share" title="Share"> </a> <a title="Share" href="https://t.me/share/url?url=codenfast.com&amp;text=Codenfast+Software+Developer+Group">
+                <img loading="lazy" src="http://app.codenfast.com:9001/api/rest/server-files/system/image/codenfast.com/012021/share-telegram-64x64.webp" class="cfm-share" alt="Share" title="Share"> </a> <a title="Share" href="https://www.facebook.com/sharer/sharer.php?u=codenfast.com">
+                <img loading="lazy" src="http://app.codenfast.com:9001/api/rest/server-files/system/image/codenfast.com/012021/share-facebook-64x64.webp" class="cfm-share" alt="Share" title="Share"> </a> <a title="Share" href="https://www.linkedin.com/sharing/share-offsite/?url=codenfast.com">
+                <img loading="lazy" src="http://app.codenfast.com:9001/api/rest/server-files/system/image/codenfast.com/012021/share-linkedin-64x64.webp" class="cfm-share" alt="Share" title="Share"> </a> <a title="Share" href="http://pinterest.com/pin/create/link/?url=codenfast.com">
+                <img loading="lazy" src="http://app.codenfast.com:9001/api/rest/server-files/system/image/codenfast.com/012021/share-pinterest-64x64.webp" class="cfm-share" alt="Share" title="Share"> </a> <a title="Share" href="https://web.skype.com/share?url=codenfast.com&amp;text=Codenfast+Software+Developer+Group">
+                <img loading="lazy" src="http://app.codenfast.com:9001/api/rest/server-files/system/image/codenfast.com/012021/share-skype-64x64.webp" class="cfm-share" alt="Share" title="Share"> </a> <a title="Share" href="https://reddit.com/submit?url=codenfast.com&amp;title=Codenfast+Software+Developer+Group">
+                <img loading="lazy" src="http://app.codenfast.com:9001/api/rest/server-files/system/image/codenfast.com/012021/share-reddit-64x64.webp" class="cfm-share" alt="Share" title="Share"> </a>
+                <a title="Share" href="whatsapp://send?text=codenfast.com|Codenfast+Software+Developer+Group" data-action="share/whatsapp/share"> <img loading="lazy" src="http://app.codenfast.com:9001/api/rest/server-files/system/image/codenfast.com/012021/share-whatsapp-64x64.webp" class="cfm-share" alt="Share" title="Share"> </a>
+            </div>
+            <!-- <div class="col-sm-4 text-white">
+                <h4>Address</h4>
+                <p>Street</p>
+                <p>City</p>
+                <p>Country Code</p>
+                <p>Postal Code</p>
+                <h4>Comm</h4>
+                <p>+9817239123</p>
+            </div> -->
+        </div>
+    </div>
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright © Codenfast</p>
+    </div>
+</footer>
+
+<div id="cookie" class="fixed-bottom m-4 solid-glass invisible">
+    <div class="d-flex justify-content-around align-items-center">
+        <img class="cookie-image" src="https://www.svgrepo.com/show/55414/cookies.svg" alt="cookie">
+        <span>This site using cookies to make your experience better. OK! I'm going away.</span>
+    </div>
+</div>
+<div id="loading" class="loading row justify-content-center align-items-start">
+    <svg id="coding-desktop-loading" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g id="study">
+            <rect width="64" height="64"></rect>
+            <g id="smoke">
+                <path id="smoke-2" d="M9 21L9.55279 19.8944C9.83431 19.3314 9.83431 18.6686 9.55279 18.1056L9 17L8.44721 15.8944C8.16569 15.3314 8.16569 14.6686 8.44721 14.1056L9 13" stroke="#797270"></path>
+                <path id="smoke-1" d="M6.5 22L7.05279 20.8944C7.33431 20.3314 7.33431 19.6686 7.05279 19.1056L6.5 18L5.94721 16.8944C5.66569 16.3314 5.66569 15.6686 5.94721 15.1056L6.5 14" stroke="#797270"></path>
+            </g>
+            <g id="laptop">
+                <rect id="laptop-base" x="17" y="28" width="20" height="3" fill="#F3F3F3" stroke="#453F3C" stroke-width="2"></rect>
+                <rect id="laptop-screen" x="18" y="17" width="18" height="11" fill="#5A524E" stroke="#453F3C" stroke-width="2"></rect>
+                <rect id="line-1" x="20" y="19" width="14" height="1" fill="#F78764"></rect>
+                <rect id="line-2" x="20" y="21" width="14" height="1" fill="#F9AB82"></rect>
+                <rect id="line-3" x="20" y="23" width="14" height="1" fill="#F78764"></rect>
+                <rect id="line-4" x="20" y="25" width="14" height="1" fill="#F9AB82"></rect>
+            </g>
+            <g id="cup">
+                <rect id="Rectangle 978" x="5" y="24" width="5" height="7" fill="#CCC4C4" stroke="#453F3C" stroke-width="2"></rect>
+                <path id="Ellipse 416" d="M11 28C12.1046 28 13 27.1046 13 26C13 24.8954 12.1046 24 11 24" stroke="#453F3C" stroke-width="2"></path>
+                <rect id="Rectangle 996" x="6" y="25" width="3" height="1" fill="#D6D2D1"></rect>
+            </g>
+            <g id="books">
+                <rect id="Rectangle 984" x="58" y="27" width="4" height="14" transform="rotate(90 58 27)" fill="#B16B4F" stroke="#453F3C" stroke-width="2"></rect>
+                <rect id="Rectangle 985" x="56" y="23" width="4" height="14" transform="rotate(90 56 23)" fill="#797270" stroke="#453F3C" stroke-width="2"></rect>
+                <rect id="Rectangle 986" x="60" y="19" width="4" height="14" transform="rotate(90 60 19)" fill="#F78764" stroke="#453F3C" stroke-width="2"></rect>
+                <rect id="Rectangle 993" x="47" y="20" width="12" height="1" fill="#F9AB82"></rect>
+                <rect id="Rectangle 994" x="43" y="24" width="12" height="1" fill="#54504E"></rect>
+                <rect id="Rectangle 995" x="45" y="28" width="12" height="1" fill="#804D39"></rect>
+            </g>
+            <g id="desk">
+                <rect id="Rectangle 973" x="4" y="31" width="56" height="5" fill="#797270" stroke="#453F3C" stroke-width="2"></rect>
+                <rect id="Rectangle 987" x="10" y="36" width="30" height="6" fill="#797270" stroke="#453F3C" stroke-width="2"></rect>
+                <rect id="Rectangle 975" x="6" y="36" width="4" height="24" fill="#797270" stroke="#453F3C" stroke-width="2"></rect>
+                <rect id="Rectangle 974" x="40" y="36" width="18" height="24" fill="#797270" stroke="#453F3C" stroke-width="2"></rect>
+                <line id="Line 129" x1="40" y1="48" x2="58" y2="48" stroke="#453F3C" stroke-width="2"></line>
+                <line id="Line 130" x1="22" y1="39" x2="28" y2="39" stroke="#453F3C" stroke-width="2"></line>
+                <line id="Line 142" x1="46" y1="42" x2="52" y2="42" stroke="#453F3C" stroke-width="2"></line>
+                <line id="Line 131" x1="46" y1="54" x2="52" y2="54" stroke="#453F3C" stroke-width="2"></line>
+                <rect id="Rectangle 988" x="11" y="37" width="28" height="1" fill="#54504E"></rect>
+                <rect id="Rectangle 992" x="5" y="32" width="54" height="1" fill="#9E9492"></rect>
+                <rect id="Rectangle 989" x="7" y="37" width="2" height="1" fill="#54504E"></rect>
+                <rect id="Rectangle 990" x="41" y="37" width="16" height="1" fill="#54504E"></rect>
+                <rect id="Rectangle 991" x="41" y="49" width="16" height="1" fill="#54504E"></rect>
+                <line id="Line 143" y1="60" x2="64" y2="60" stroke="#453F3C" stroke-width="2"></line>
+            </g>
+        </g>
+    </svg>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" async defer></script><script src="js/scripts.js"></script>
+
+</body></html>
