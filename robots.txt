@@ -1,0 +1,4 @@
+User-agent: *
+Crawl-delay: 5
+Disallow: /cgi-bin/
+Sitemap: https://wirecutterbot.com//sitemap.xml
